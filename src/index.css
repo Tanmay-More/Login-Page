@@ -1,0 +1,5 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+*{font-family: 'Raleway', sans-serif;}
+.border-left{border-width: 3px !important;}
+.r-height{height: 450px;}
