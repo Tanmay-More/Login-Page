@@ -20,7 +20,7 @@ function LoginForm({Login, error}) {
            </div>
        </div>
        <input className='btn btn-primary rounded my-3 mx-0' type="submit" value="LogIn" />
-       {(error != "") ? <p className='error text-danger m-0'>{error}</p>: ""}
+       {(error !== "") ? <p className='error text-danger m-0'>{error}</p>: ""}
    </form>
    </div>
   )
