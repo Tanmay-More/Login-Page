@@ -47,7 +47,6 @@ function App() {
     }   
   }
   const Logout = () => {
-    console.log("Logout");
     setUser({email: ""})
     setError("")
   }

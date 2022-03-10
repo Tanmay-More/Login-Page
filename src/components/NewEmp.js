@@ -11,13 +11,17 @@ function NewEmp() {
         else
         {
             let data = `{"name": "${emp.name}", "designation": "${emp.designation}", "address": "${emp.city}"}`
-            console.log(data)
             let xml = new XMLHttpRequest();
             xml.open("POST", 'http://127.0.0.1:5000/emp', true);
-            xml.setRequestHeader('Content-type', 'aplication/json')
+            //imp part --
+            xml.setRequestHeader('Content-Type', 'application/json');
+            xml.setRequestHeader('Access-Control-Allow-Origin', '*');
+            xml.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+            xml.setRequestHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+            xml.withCredentials = false;
+            //--imp part
             xml.onload = () => {
-                alert(xml.status)
-                console.log(this.responseText)
+                alert("Employee Added Successfully.")
             }
             xml.send(data)
             }

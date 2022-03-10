@@ -15,8 +15,6 @@ function CnfDel() {
         };
         xml.setRequestHeader('Content-type', 'application/json');
         xml.send(data);
-    
-        console.log("Deleting emp id", id)
       }
     return (
         <div className='mx-5 my-5 border-primary border-left p-4'>

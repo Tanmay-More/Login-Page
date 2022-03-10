@@ -44,7 +44,7 @@ function Home({GetData, user, Logout}) {
               </tr>
            </thead>
            <tbody>
-             {result.map(result => { return <EmpList result={result} />})}            
+             {result.map(result => { return <EmpList key={result[0]} result={result} />})}            
             </tbody>
         </table>
     </div>
