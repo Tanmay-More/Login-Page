@@ -19,7 +19,7 @@ function LoginForm({Login, error}) {
                <input className='rounded m-1 border border-primary d-block' type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
            </div>
        </div>
-       <p style={{color: "red"}}>Sample text...</p>
+       <p style={{color: "green"}}>Sample text...</p>
        <input className='btn btn-primary rounded my-3 mx-0' type="submit" value="LogIn" />
        {(error !== "") ? <p className='error text-danger m-0'>{error}</p>: ""}
    </form>
